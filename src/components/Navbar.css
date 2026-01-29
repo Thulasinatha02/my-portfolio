@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* DARK (Hero section) */
+.navbar.dark {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.navbar.dark a,
+.navbar.dark h1 {
+  color: white;
+}
+
+/* LIGHT (About & below) */
+.navbar.light {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.light a,
+.navbar.light h1 {
+  color: #111;
+}
+
+/* Links */
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}

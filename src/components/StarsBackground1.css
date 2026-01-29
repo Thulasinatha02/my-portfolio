@@ -1,0 +1,48 @@
+.stars-wrapper.small {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .star {
+    position: absolute;
+    bottom: -10px;
+  
+    width: 6px;
+    height: 6px;
+    background: white;
+  
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+  
+    animation: moveUpSmall linear infinite;
+  }
+  
+  @keyframes moveUpSmall {
+    from {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
