@@ -20,13 +20,14 @@ export default function Navbar() {
       className={`navbar ${lightNav ? "light" : "dark"}`}
       initial={{ y: -80 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.9 }}
     >
       <h1>MyPortfolio</h1>
       <div>
         <a href="#Hero">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
         
       </div>

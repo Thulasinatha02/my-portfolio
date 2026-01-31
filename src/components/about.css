@@ -62,4 +62,31 @@
     color: #0b0000;
     margin-bottom: 15px;
   }
+  .about-text {
+    text-align: left;
+  }
+    
+  .about-img {
+    width: 420px;
+    margin-bottom: 50px;
+    display: block;
+    
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
   
+  .about-img:hover {
+    transform: translateY(-10px) scale(1.05);
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.25));
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .about-img:hover {
+    animation: shake 0.9s ease-in-out;
+  }

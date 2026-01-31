@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import "./about.css";
+import aboutImg from "../assets/about-illustration.png";
 
 const skills = [
   { name: "HTML5", level: 80 },
   { name: "CSS3", level: 75 },
-  { name: "JavaScript", level: 90 },
+  { name: "JavaScript", level: 50 },
   { name: "PHP", level: 70 },
   { name: "ReactJS", level: 80 },
   { name: "Python", level: 75 },
-  { name: "VanillaJS", level: 85 },
+  { name: "Hardware", level: 80 },
   { name: "WordPress", level: 80 },
 ];
 
@@ -32,40 +33,53 @@ export default function About() {
                   initial={{ width: 0 }}
                   whileInView={{ width: `${skill.level}%` }}
                   transition={{ duration: 1.2, ease: "easeInOut" }}
-                  viewport={{ once: false }}   // 🔥 replays on scroll
+                  viewport={{ once: false }} // 🔥 replay on scroll
                 />
               </div>
             </div>
           ))}
         </div>
 
-        {/* RIGHT – ABOUT TEXT */}
+        {/* RIGHT – ABOUT CONTENT */}
         <motion.div
           className="about-text"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false }}   // 🔥 replays
+          viewport={{ once: false }}
         >
-          <h2>About Me</h2>
+           <h2>About Me</h2>
 
-          <motion.div
-            className="underline"
-            initial={{ width: 0 }}
-            whileInView={{ width: 60 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: false }} // 🔥 underline refresh
-          />
+<motion.div
+  className="underline"
+  initial={{ width: 0 }}
+  whileInView={{ width: 60 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: false }}
+/>
 
-          <p>
-          Enthusiastic computer science graduate eager to apply programming knowledge and problem
-solving skills in an entry-level IT role, contributing to team success and enhancing user experiences
-through technology.
-          </p>
+<p>
+  Enthusiastic computer science graduate eager to apply programming
+  knowledge and problem-solving skills in an entry-level IT role,
+  contributing to team success and enhancing user experiences through
+  technology.
+</p>
 
-          <p>
-            Anim laborum reprehenderit labore magna ut dolore quis irure.
-          </p>
+<motion.img
+  src={aboutImg}
+  alt="Developer working on computer"
+  className="about-img"
+  animate={{
+    rotate: [0, -3, 3, -3, 0],
+  }}
+  transition={{
+    repeat: Infinity,
+    duration: 1,
+  }}
+/>
+
+
+
         </motion.div>
 
       </div>

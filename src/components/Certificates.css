@@ -1,0 +1,173 @@
+.Certificates {
+    padding: 8rem;
+    background: #081727; /* light background */
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+  
+  .certificate-card {
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 14px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #8e2525, #4285e3); /* soft card gradient */
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(255,255,255,0.7); /* soft 3D effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .certificate-frame {
+    background: #044586;
+    border: 1px solid #1056c0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 12px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .certificate-card img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    object-fit: contain;
+  background: #ffffff;
+  padding: 6px;
+
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 12px 12px 25px rgba(0,0,0,0.15), -12px -12px 25px rgba(255,255,255,0.8);
+  }
+  
+  .cert-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    pointer-events: none;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    white-space: nowrap;
+  }
+  
+  .cert-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2000; /* ✅ higher than navbar */
+    background: rgba(0, 0, 0, 0.6); /* optional but recommended */
+  }
+  
+  
+  
+  .cert-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  }
+  
+  /* Optional: add a subtle animated background pattern */
+  .Certificates::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+.certificate-info {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.certificate-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.certificate-info p {
+  font-size: 13px;
+  color: #e5e7eb;
+  margin-bottom: 2px;
+}
+
+.certificate-info span {
+  font-size: 12px;
+  color: #c7d2fe;
+}
+
+/* ============================= */
+/* BETTER GRID SEPARATION        */
+/* ============================= */
+
+.certificates-grid {
+  align-items: stretch;
+}
+
+/* ============================= */
+/* HOVER CLARITY IMPROVEMENT     */
+/* ============================= */
+
+.certificate-card:hover img {
+  transform: scale(1.02);
+}
+
+/* ============================= */
+/* ACCESSIBILITY FOCUS STATE     */
+/* ============================= */
+
+.certificate-card:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 4px;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+/* underline accent */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  margin: 12px auto 0;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #cbd5e1;
+  max-width: 520px;
+  margin: 16px auto 3rem;
+  line-height: 1.6;
+}

@@ -39,7 +39,7 @@ export default function Hero() {
   }}
   whileTap={{ scale: 0.95 }}
 >
-  View My Work
+  <a href="#projects">View My Work</a>
 </motion.button>
       </div>
     </motion.section>
