@@ -1,6 +1,6 @@
 .contact {
-    min-height: 100vh;
-    background: url("D:\portfolio\my-portfolio\Contact-Us-Page-Examples.jpg") center/cover no-repeat;
+    min-height: 200vh;
+    background: url("D:\portfolio\my-portfolio\Gemini_Generated_Image_s8bk00s8bk00s8bk.png") center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
   }
   
   /* Wrapper */
@@ -26,7 +26,7 @@
   /* Card */
   .contact-card {
     background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(12px);
+    
     padding: 40px;
     max-width: 5000px;
     color: white;

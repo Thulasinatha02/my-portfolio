@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "./about.css";
 
 const skills = [
@@ -26,32 +27,46 @@ export default function About() {
               </div>
 
               <div className="progress-bar">
-                <div
+                <motion.div
                   className="progress"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${skill.level}%` }}
+                  transition={{ duration: 1.2, ease: "easeInOut" }}
+                  viewport={{ once: false }}   // 🔥 replays on scroll
+                />
               </div>
             </div>
           ))}
         </div>
 
         {/* RIGHT – ABOUT TEXT */}
-        <div className="about-text">
+        <motion.div
+          className="about-text"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: false }}   // 🔥 replays
+        >
           <h2>About Me</h2>
-          <div className="underline"></div>
+
+          <motion.div
+            className="underline"
+            initial={{ width: 0 }}
+            whileInView={{ width: 60 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false }} // 🔥 underline refresh
+          />
 
           <p>
-            Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua
-            irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit
-            aute dolore irure nostrud ut incididunt.
+          Enthusiastic computer science graduate eager to apply programming knowledge and problem
+solving skills in an entry-level IT role, contributing to team success and enhancing user experiences
+through technology.
           </p>
 
           <p>
             Anim laborum reprehenderit labore magna ut dolore quis irure.
-            Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi
-            ea minim proident.
           </p>
-        </div>
+        </motion.div>
 
       </div>
     </section>
