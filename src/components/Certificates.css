@@ -1,11 +1,11 @@
 /* ================= SECTION ================= */
 
 .Certificates {
-  padding: 6rem 2rem;
+  padding: 6rem 8rem;
   background: #081727;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto; 
   overflow-x: hidden;
 }
 
