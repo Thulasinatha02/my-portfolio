@@ -1,131 +1,137 @@
 .about {
-  padding: 80px 10%;
-  background: #ffffff;
-  color: #333;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-/* LEFT – SKILLS */
-.skills {
-  flex: 1;
-}
-
-.skill {
-  margin-bottom: 25px;
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 8px;
-  background: #dbeafe;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.progress {
-  height: 100%;
-  background: #2563eb;
-  border-radius: 20px;
-}
-
-/* RIGHT – TEXT */
-.about-text {
-  flex: 1;
-}
-
-.about-text h2 {
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-
-.underline {
-  width: 60px;
-  height: 3px;
-  background: #012a83;
-  margin-bottom: 20px;
-}
-
-.about-text p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #0b0000;
-  margin-bottom: 15px;
-}
-
-/* IMAGE */
-.about-img {
-  width: 100%;
-  max-width: 420px;
-  display: block;
-  margin-bottom: 30px;
-  transition: transform 0.4s ease, filter 0.4s ease;
-}
-
-.about-img:hover {
-  transform: translateY(-10px) scale(1.05);
-  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.25));
-  animation: shake 0.9s ease-in-out;
-}
-
-/* SHAKE */
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-3px); }
-  50% { transform: translateX(3px); }
-  75% { transform: translateX(-3px); }
-  100% { transform: translateX(0); }
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-  .about {
-    padding: 60px 6%;
+    padding: 80px 10%;
+    background: #ffffff;
+    color: #333;
   }
-
+  
   .about-container {
-    flex-direction: column-reverse;
-    gap: 40px;
+    display: flex;
+    gap: 60px;
   }
-
-  .about-text {
-    text-align: center;
+  
+  /* LEFT SIDE – SKILLS */
+  .skills {
+    flex: 1;
   }
-
-  .about-img {
-    margin: 0 auto 30px;
-    max-width: 280px;
+  
+  .skill {
+    margin-bottom: 25px;
   }
-
-  .underline {
-    margin: 0 auto 20px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .about {
-    padding: 50px 5%;
-  }
-
-  .about-text h2 {
-    font-size: 26px;
-  }
-
-  .about-text p {
+  
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
+    margin-bottom: 6px;
   }
-}
+  
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #dbeafe;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 20px;
+  }
+  
+  /* RIGHT SIDE – ABOUT TEXT */
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  
+  .underline {
+    width: 60px;
+    height: 3px;
+    background: #012a83;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #0b0000;
+    margin-bottom: 15px;
+  }
+  .about-text {
+    text-align: left;
+  }
+    
+  .about-img {
+    width: 420px;
+    margin-bottom: 50px;
+    display: block;
+    
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  
+  .about-img:hover {
+    transform: translateY(-10px) scale(1.05);
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.25));
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .about-img:hover {
+    animation: shake 0.9s ease-in-out;
+  }
+  @media (max-width: 768px) {
+
+    .about {
+      padding: 60px 6%;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      align-items: center; /* ✅ important */
+      gap: 40px;
+    }
+  
+    /* Order control */
+    .about-text {
+      order: 1;
+      text-align: center; /* ✅ text center on mobile */
+    }
+    .skills {
+      order: 3;
+      width: 100%;
+    }
+    .about-img {
+      order: 2;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  
+    
+  
+    /* Center underline */
+    .underline {
+      margin: 0 auto 20px;
+    }
+  
+    /* Fix skill header + bar spacing */
+    .skill-header {
+      font-size: 13px;
+      align-items: center;
+    }
+  
+  }
+  
+  
