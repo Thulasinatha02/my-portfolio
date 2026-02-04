@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b18d66f9.css",
+    "main.css": "/my-portfolio/static/css/main.7e7d24e5.css",
     "main.js": "/my-portfolio/static/js/main.fc06ed67.js",
     "static/media/react-cert.png": "/my-portfolio/static/media/react-cert.d8ba509b306a58cfcbe3.png",
     "static/media/Gemini_Generated_Image_s8bk00s8bk00s8bk.png": "/my-portfolio/static/media/Gemini_Generated_Image_s8bk00s8bk00s8bk.8d0191770199b4b42514.png",
@@ -11,11 +11,11 @@
     "static/media/nullclass.png": "/my-portfolio/static/media/nullclass.4f1cb7fd3d5c53277c7b.png",
     "static/media/openweaver.jpeg": "/my-portfolio/static/media/openweaver.36f79062862bf921754f.jpeg",
     "index.html": "/my-portfolio/index.html",
-    "main.b18d66f9.css.map": "/my-portfolio/static/css/main.b18d66f9.css.map",
+    "main.7e7d24e5.css.map": "/my-portfolio/static/css/main.7e7d24e5.css.map",
     "main.fc06ed67.js.map": "/my-portfolio/static/js/main.fc06ed67.js.map"
   },
   "entrypoints": [
-    "static/css/main.b18d66f9.css",
+    "static/css/main.7e7d24e5.css",
     "static/js/main.fc06ed67.js"
   ]
 }
