@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.c4161578.css",
-    "main.js": "/my-portfolio/static/js/main.3891110e.js",
+    "main.css": "/my-portfolio/static/css/main.405c5d14.css",
+    "main.js": "/my-portfolio/static/js/main.1374e40e.js",
     "static/media/react-cert.png": "/my-portfolio/static/media/react-cert.d8ba509b306a58cfcbe3.png",
     "static/media/Gemini_Generated_Image_s8bk00s8bk00s8bk.png": "/my-portfolio/static/media/Gemini_Generated_Image_s8bk00s8bk00s8bk.8d0191770199b4b42514.png",
     "static/media/about-illustration.png": "/my-portfolio/static/media/about-illustration.c7d3d6302c49c22b67eb.png",
@@ -15,11 +15,11 @@
     "static/media/nullclass.png": "/my-portfolio/static/media/nullclass.4f1cb7fd3d5c53277c7b.png",
     "static/media/openweaver.jpeg": "/my-portfolio/static/media/openweaver.36f79062862bf921754f.jpeg",
     "index.html": "/my-portfolio/index.html",
-    "main.c4161578.css.map": "/my-portfolio/static/css/main.c4161578.css.map",
-    "main.3891110e.js.map": "/my-portfolio/static/js/main.3891110e.js.map"
+    "main.405c5d14.css.map": "/my-portfolio/static/css/main.405c5d14.css.map",
+    "main.1374e40e.js.map": "/my-portfolio/static/js/main.1374e40e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4161578.css",
-    "static/js/main.3891110e.js"
+    "static/css/main.405c5d14.css",
+    "static/js/main.1374e40e.js"
   ]
 }
