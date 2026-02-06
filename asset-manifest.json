@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.3dd9a555.css",
-    "main.js": "/my-portfolio/static/js/main.fc06ed67.js",
+    "main.css": "/my-portfolio/static/css/main.dfb06f6f.css",
+    "main.js": "/my-portfolio/static/js/main.3ed7fc73.js",
     "static/media/react-cert.png": "/my-portfolio/static/media/react-cert.d8ba509b306a58cfcbe3.png",
     "static/media/Gemini_Generated_Image_s8bk00s8bk00s8bk.png": "/my-portfolio/static/media/Gemini_Generated_Image_s8bk00s8bk00s8bk.8d0191770199b4b42514.png",
     "static/media/about-illustration.png": "/my-portfolio/static/media/about-illustration.c7d3d6302c49c22b67eb.png",
+    "static/media/computer-toy.png": "/my-portfolio/static/media/computer-toy.22ed4a253d0a39fb746d.png",
+    "static/media/mongodb.png": "/my-portfolio/static/media/mongodb.405a182f5746e5e135b7.png",
+    "static/media/symposiyum.jpeg": "/my-portfolio/static/media/symposiyum.5b4da39525012e991c60.jpeg",
+    "static/media/iotpart.jpeg": "/my-portfolio/static/media/iotpart.968eeca3a8b09e0de2ad.jpeg",
     "static/media/nss1.jpeg": "/my-portfolio/static/media/nss1.eabd716d3053da8d60d5.jpeg",
     "static/media/javacerti.jpeg": "/my-portfolio/static/media/javacerti.f49c2c247c552b1301a0.jpeg",
     "static/media/ilife.jpeg": "/my-portfolio/static/media/ilife.f8d8256288947bb527f2.jpeg",
     "static/media/nullclass.png": "/my-portfolio/static/media/nullclass.4f1cb7fd3d5c53277c7b.png",
     "static/media/openweaver.jpeg": "/my-portfolio/static/media/openweaver.36f79062862bf921754f.jpeg",
     "index.html": "/my-portfolio/index.html",
-    "main.3dd9a555.css.map": "/my-portfolio/static/css/main.3dd9a555.css.map",
-    "main.fc06ed67.js.map": "/my-portfolio/static/js/main.fc06ed67.js.map"
+    "main.dfb06f6f.css.map": "/my-portfolio/static/css/main.dfb06f6f.css.map",
+    "main.3ed7fc73.js.map": "/my-portfolio/static/js/main.3ed7fc73.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dd9a555.css",
-    "static/js/main.fc06ed67.js"
+    "static/css/main.dfb06f6f.css",
+    "static/js/main.3ed7fc73.js"
   ]
 }
