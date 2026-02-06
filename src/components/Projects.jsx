@@ -24,7 +24,21 @@ export default function Projects() {
             Improved solar energy efficiency by automating alignment.
           </p>
         </motion.div>
-
+        <motion.div
+          className="project-card"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: false, amount: 0.3 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <h3>Personal Portfolio Website</h3>
+          <p>
+          A responsive and animated personal portfolio website built using React and Framer Motion to showcase my skills,
+           projects, certificates, and resume. The website features smooth animations, a modern dark UI, and an interactive
+            user experience designed to highlight my work effectively.
+          </p>
+        </motion.div>
         <motion.div
           className="project-card"
           initial={{ opacity: 0, y: 50 }}
@@ -42,21 +56,7 @@ export default function Projects() {
             This project demonstrates a scalable and cost-effective solution for smart retail environments.</p>
           </p>
         </motion.div>
-        <motion.div
-          className="project-card"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.3 }}
-          whileHover={{ scale: 1.05 }}
-        >
-          <h3>Personal Portfolio Website</h3>
-          <p>
-          A responsive and animated personal portfolio website built using React and Framer Motion to showcase my skills,
-           projects, certificates, and resume. The website features smooth animations, a modern dark UI, and an interactive
-            user experience designed to highlight my work effectively.
-          </p>
-        </motion.div>
+       
 
       </div>
     </section>
