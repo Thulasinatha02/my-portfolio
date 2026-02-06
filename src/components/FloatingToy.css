@@ -1,0 +1,19 @@
+.floating-toy {
+    position: fixed;
+    bottom: 350px;
+    left: 40px;
+    z-index: 2;
+    pointer-events: none; /* so it doesn’t block clicks */
+  }
+  
+  .floating-toy img {
+    width: 100px;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 15px rgba(125, 211, 252, 0.4));
+  }
+  @media (max-width: 768px) {
+    .floating-toy {
+      display: none;
+    }
+  }
+  

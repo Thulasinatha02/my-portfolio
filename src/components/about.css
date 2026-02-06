@@ -111,18 +111,8 @@
       order: 3;
       width: 100%;
     }
-    .about-img {
-      order: 2;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto 20px;
-      display: block;
-    }
-  
-    
-  
-    /* Center underline */
-    .underline {
+     /* Center underline */
+     .underline {
       margin: 0 auto 20px;
     }
   
@@ -131,7 +121,15 @@
       font-size: 13px;
       align-items: center;
     }
-  
+
+    .about-img {
+      order: 2;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
   }
   
   

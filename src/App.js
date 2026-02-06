@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import About from "./components/about";
 import Certificates from "./components/Certificates";
-
+import FloatingToy from "./components/FloatingToy";
 
 function App() {
   const stars = Array.from({ length: 30 });
@@ -13,13 +13,14 @@ function App() {
   return (
     
     <>
+    <FloatingToy />
       <Navbar />
       <Hero />
       <About />
       <Projects />
       <Certificates />
       <Contact />
-      
+    
     </>
   );
 }

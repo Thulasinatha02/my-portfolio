@@ -15,33 +15,49 @@ export default function Hero() {
 
       {/* 🔤 Hero Content */}
       <div className="hero-content">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-        >
-          Hi, THULASINATHA I’m a Web Developer
-        </motion.h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-        >
-          I build modern React applications
-        </motion.p>
+  
 
-        <motion.button
-  className="hero-btn"
-  whileHover={{
-    scale: 1.1,
-    boxShadow: "0px 0px 20px rgba(125, 211, 252, 0.8)"
-  }}
-  whileTap={{ scale: 0.95 }}
->
-  <a href="#projects">View My Work</a>
-</motion.button>
-      </div>
+  <motion.h1
+    className="hero-name"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.5 }}
+  >
+    Hi, I'm Thulasinatha
+  </motion.h1>
+
+ 
+
+  <motion.div
+    className="hero-vision-card"
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 1.1 }}
+  >
+    I specialize in React-based applications with clean UI, optimized performance,
+    and real-world problem solving.
+  </motion.div>
+
+  <motion.div className="hero-buttons">
+    <motion.button className="hero-btn">
+      <a href="#projects">View My Work</a>
+    </motion.button>
+
+    
+  </motion.div>
+
+  <motion.div
+    className="hero-tech"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 1.4 }}
+  >
+
+  </motion.div>
+
+</div>
+
     </motion.section>
   );
 }

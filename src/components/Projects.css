@@ -1,18 +1,57 @@
 .projects {
-    padding: 80px;
+  padding: 6rem 8%;
+  background: #031236;
+  color: rgb(243, 238, 238);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* CARD */
+.project-card {
+  background: linear-gradient(145deg, #111827, #1e293b);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .card {
-    background: rgb(241, 241, 241);
-    padding: 30px;
-    border-radius: 12px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 300px;
-    color: rgb(7, 0, 0);
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .projects {
+    padding: 4rem 6%;
   }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(169, 234, 4, 0.5);
+
+  .section-title {
+    font-size: 2rem;
   }
-  
+}

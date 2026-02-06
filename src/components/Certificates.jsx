@@ -4,20 +4,24 @@ import "./Certificates.css";
 // Import your 9 certificate images
 import cert1 from "../assets/ilife.jpeg";
 import cert2 from "../assets/javacerti.jpeg";
-import cert3 from "../assets/nullclass.png";
-import cert4 from "../assets/openweaver.jpeg";
-import cert5 from "../assets/react-cert.png";
-import cert6 from "../assets/nss1.jpeg";
-
+import cert3 from "../assets/openweaver.jpeg";
+import cert4 from "../assets/nullclass.png";
+import cert5 from "../assets/symposiyum.jpeg";
+import cert6 from "../assets/mongodb.png";
+import cert7 from "../assets/iotpart.jpeg";
+import cert8 from "../assets/react-cert.png";
+import cert9 from "../assets/nss1.jpeg";
 
 const certificates = [
-  { id: 1, title: "React JS", issuer: "Coursera", year: "2024", image: cert1 },
-  { id: 2, title: "JavaScript", issuer: "Udemy", year: "2023", image: cert2 },
-  { id: 3, title: "HTML & CSS", issuer: "freeCodeCamp", year: "2023", image: cert3 },
-  { id: 4, title: "Node JS", issuer: "Coursera", year: "2024", image: cert4 },
-  { id: 5, title: "Python", issuer: "Udemy", year: "2023", image: cert5 },
-  { id: 6, title: "Django", issuer: "Coursera", year: "2023", image: cert6 },
- 
+  { id: 1, title: "ilife Intership", issuer:"ilife", year: "2022", image: cert1 },
+  { id: 2, title: "Core Java Programming Quiz", issuer: "Nehru Memorial College", year: "2022", image: cert2 },
+  { id: 3, title: "HTML & CSS", issuer: "Openweaver", year: "2023", image: cert3 },
+  { id: 4, title: "Real Time Website Building", issuer: "NULLCLASS", year: "2025", image: cert4 },
+  { id: 5, title: "Symposium", issuer: "BharathiDasan University", year: "2025", image: cert5 },
+  { id: 6, title: "RAG With Mongodb", issuer: "Mongodb", year: "2025", image: cert6 },
+  { id: 7, title: "IOT", issuer: "DHANALAKSHMI SRINIVASAN ENGINEERING COLLEGE Perambalur", year: "2025", image: cert7 },
+  { id: 8, title: "NSS", issuer: "Goverment Of India", year: "2022", image: cert8},
+  { id: 9, title: "NSS", issuer: "Bishop Heber College", year: "2022", image: cert9 },
 ];
 
 export default function Certificates() {
