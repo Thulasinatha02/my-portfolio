@@ -57,7 +57,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   .menu-btn {
     display: block;
