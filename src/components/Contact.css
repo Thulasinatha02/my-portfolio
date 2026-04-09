@@ -1,84 +1,92 @@
 .contact {
-    min-height: 200vh;
-    background: url("D:\portfolio\my-portfolio\Gemini_Generated_Image_s8bk00s8bk00s8bk.png") center/cover no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Dark overlay */
-  .contact::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Wrapper */
-  .contact-overlay {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 100px;
-  }
-  
-  /* Card */
-  .contact-card {
-    background: rgba(255, 255, 255, 0.12);
-    
-    padding: 40px;
-    max-width: 5000px;
-    color: white;
-    border-radius: 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  }
-  
-  .contact-card h2 {
-    margin-bottom: 20px;
-    color: #ff2b0a;
-  }
-  
-  .contact-card p {
-    margin-bottom: 10px;
-    font-size: 1.55rem;
-  }
-  .contact-socials {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: center;
-  }
-  
-  .social-icon {
-    font-size: 2rem;
-    color: #cbd5f5;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icon.linkedin:hover {
-    color: #0a66c2;
-  }
-  
-  .social-icon.github:hover {
-    color: #ffffff;
-  }
-  
-  /* Mobile */
-  @media (max-width: 768px) {
-    .contact-overlay {
-      justify-content: center;
-      padding: 0 20px;
-    }
-  }
-  a {
-    color: rgb(255, 0, 212);
-  }
-  a:visited {
-    color: rgb(86, 219, 246);
-  }
-  
+  min-height: 100vh;
+  background: url("D:\\portfolio\\my-portfolio\\Gemini_Generated_Image_s8bk00s8bk00s8bk.png") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay */
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Darkened slightly for better readability */
+}
+
+/* Wrapper */
+.contact-overlay {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 100px;
+}
+
+/* Card */
+.contact-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  max-width: 500px;
+  color: white;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.contact-card h2 {
+  margin-bottom: 20px;
+  color: #ff2b0a;
+}
+
+.contact-card p {
+  margin-bottom: 10px;
+  font-size: 1.55rem;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #cbd5f5;
+  transition: color 0.3s ease;
+}
+
+.social-icon.linkedin:hover {
+  color: #0a66c2;
+}
+
+.social-icon.github:hover {
+  color: #ffffff;
+}
+
+a.contact-link {
+  color: rgb(255, 0, 212);
+  text-decoration: none;
+}
+
+a.contact-link:visited {
+  color: rgb(86, 219, 246);
+}
+
+a.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+  .contact {
+    min-height: 100vh;
+    background-position: center center;
+    background-attachment: scroll;
+    padding: 40px 0;
+  }
+
   .contact-overlay {
     justify-content: center;
     padding: 0 6%;
@@ -86,6 +94,7 @@
 
   .contact-card {
     padding: 28px;
+    max-width: 100%;
     border-radius: 24px;
     text-align: center;
   }

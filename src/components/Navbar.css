@@ -32,6 +32,21 @@
   color: #111;
 }
 
+/* Links Container */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: inherit;
+}
+
 /* Links */
 .navbar a {
   margin-left: 20px;

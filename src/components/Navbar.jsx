@@ -4,6 +4,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   const [lightNav, setLightNav] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,13 +24,20 @@ export default function Navbar() {
       transition={{ duration: 0.9 }}
     >
       <h1>MyPortfolio</h1>
-      <div>
-        <a href="#Hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-        
+      
+      <button 
+        className="menu-btn" 
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
+
+      <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
+        <a href="#Hero" onClick={() => setMenuOpen(false)}>Home</a>
+        <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+        <a href="#certificates" onClick={() => setMenuOpen(false)}>Certificates</a>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
       </div>
     </motion.nav>
   );
