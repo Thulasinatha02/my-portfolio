@@ -11,7 +11,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* Darkened slightly for better readability */
+  background: rgba(0, 0, 0, 0.4);
+  /* Darkened slightly for better readability */
 }
 
 /* Wrapper */
