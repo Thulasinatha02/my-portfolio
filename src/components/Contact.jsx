@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
 
 export default function Contact() {
@@ -17,21 +17,24 @@ export default function Contact() {
         >
           <h2>Contact Me</h2>
 
-          <p>
-            📞{" "}
+          <div className="contact-item">
+            <FaPhoneAlt className="contact-icon" />
             <a href="tel:6385511589" className="contact-link">
-              63855 11589
+              +91 63855 11589
             </a>
-          </p>
+          </div>
 
-          <p>
-            📧{" "}
+          <div className="contact-item">
+            <FaEnvelope className="contact-icon" />
             <a href="mailto:thulasinathabca@gmail.com" className="contact-link">
               thulasinathabca@gmail.com
             </a>
-          </p>
+          </div>
 
-          <p>📍 India</p>
+          <div className="contact-item">
+            <FaMapMarkerAlt className="contact-icon" />
+            <span className="contact-text">India</span>
+          </div>
 
           {/* 🔗 Social Icons */}
           <div className="contact-socials">

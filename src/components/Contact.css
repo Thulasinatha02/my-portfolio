@@ -36,13 +36,28 @@
 }
 
 .contact-card h2 {
-  margin-bottom: 20px;
-  color: #ff2b0a;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.contact-card p {
-  margin-bottom: 10px;
-  font-size: 1.55rem;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.contact-icon {
+  color: #00f2fe;
+  font-size: 1.6rem;
+}
+
+.contact-text {
+  color: #ffffff;
 }
 
 .contact-socials {
@@ -67,16 +82,18 @@
 }
 
 a.contact-link {
-  color: rgb(255, 0, 212);
+  color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a.contact-link:visited {
-  color: rgb(86, 219, 246);
+  color: #ffffff;
 }
 
 a.contact-link:hover {
-  text-decoration: underline;
+  color: #00f2fe;
+  text-decoration: none;
 }
 
 /* Mobile */
@@ -104,8 +121,9 @@ a.contact-link:hover {
     font-size: 26px;
   }
 
-  .contact-card p {
-    font-size: 1rem;
+  .contact-item {
+    font-size: 1.1rem;
+    justify-content: center;
   }
 }
 
